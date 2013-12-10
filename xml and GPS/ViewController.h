@@ -7,7 +7,45 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
+#import "MyAnnotation.h"
+#import "Trip.h"
+#import "SummaryViewController.h"
 
-@interface ViewController : UIViewController
+#warning want to have map expand to show added locations out of initial view range settings.
+
+@interface ViewController : UIViewController<CLLocationManagerDelegate,UIAlertViewDelegate, SummaryViewControllerDelegate>
+
+@property(nonatomic,strong)CLLocationManager * manager;
+@property(nonatomic,strong)NSMutableArray * cars;
+-(BOOL)fetchTheCars;
+- (IBAction)changeCar:(UISwipeGestureRecognizer *)sender;
+@property (strong, nonatomic) IBOutlet UIImageView *carChoiceImageLayer;
+@property int carChoiceIndex;
+@property CGPoint currentCenter;
+@property(nonatomic,strong) Trip * ourTrip;
+- (IBAction)showLocationMenu:(id)sender;
+- (IBAction)hideLocationMenu:(id)sender;
+- (IBAction)addNewLocation:(id)sender;
+@property (strong, nonatomic) IBOutlet UIView *locationMenu;
+@property (strong, nonatomic) IBOutlet UILabel *labelNumberOfPassengers;
+
+
+
+
+
+
+
+@property (strong, nonatomic) IBOutlet MKMapView *map;
+
+-(void)addLocationToMapWithString:(NSString *)addressString;
+
+@property (strong, nonatomic) IBOutlet UILabel *lableTotalCost;
+
+
+
+
+
 
 @end

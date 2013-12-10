@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		462757BA184FC1A70002B808 /* MyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 462757B9184FC1A70002B808 /* MyAnnotation.m */; };
+		462757BD185059450002B808 /* Trip.m in Sources */ = {isa = PBXBuildFile; fileRef = 462757BC185059450002B808 /* Trip.m */; };
+		462758201856AEB10002B808 /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4627581F1856AEB10002B808 /* SummaryViewController.m */; };
 		467D2FB41847C2B900789746 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467D2FB31847C2B900789746 /* Foundation.framework */; };
 		467D2FB61847C2B900789746 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467D2FB51847C2B900789746 /* CoreGraphics.framework */; };
 		467D2FB81847C2B900789746 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467D2FB71847C2B900789746 /* UIKit.framework */; };
@@ -21,6 +24,16 @@
 		467D2FD51847C2B900789746 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467D2FB71847C2B900789746 /* UIKit.framework */; };
 		467D2FDD1847C2B900789746 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 467D2FDB1847C2B900789746 /* InfoPlist.strings */; };
 		467D2FDF1847C2B900789746 /* xml_and_GPSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 467D2FDE1847C2B900789746 /* xml_and_GPSTests.m */; };
+		467D2FEA1847C49500789746 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 467D2FE91847C49500789746 /* Car.m */; };
+		467D2FED1847CAFE00789746 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 467D2FEC1847CAFE00789746 /* XMLParser.m */; };
+		467D2FF518481A0C00789746 /* AddLocation.png in Resources */ = {isa = PBXBuildFile; fileRef = 467D2FEF18481A0C00789746 /* AddLocation.png */; };
+		467D2FF618481A0C00789746 /* CarHideGradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 467D2FF018481A0C00789746 /* CarHideGradient.png */; };
+		467D2FF718481A0C00789746 /* CarOptionsScroll.png in Resources */ = {isa = PBXBuildFile; fileRef = 467D2FF118481A0C00789746 /* CarOptionsScroll.png */; };
+		467D2FF818481A0C00789746 /* HideMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 467D2FF218481A0C00789746 /* HideMenu.png */; };
+		467D2FF918481A0C00789746 /* RemoveLocation.png in Resources */ = {isa = PBXBuildFile; fileRef = 467D2FF318481A0C00789746 /* RemoveLocation.png */; };
+		467D2FFA18481A0C00789746 /* SubmitTrip.png in Resources */ = {isa = PBXBuildFile; fileRef = 467D2FF418481A0C00789746 /* SubmitTrip.png */; };
+		467D2FFC184827A600789746 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467D2FFB184827A600789746 /* MapKit.framework */; };
+		467D2FFE184A689D00789746 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467D2FFD184A689D00789746 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +47,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		462757B8184FC1A70002B808 /* MyAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnnotation.h; sourceTree = "<group>"; };
+		462757B9184FC1A70002B808 /* MyAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnnotation.m; sourceTree = "<group>"; };
+		462757BB185059450002B808 /* Trip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trip.h; sourceTree = "<group>"; };
+		462757BC185059450002B808 /* Trip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trip.m; sourceTree = "<group>"; };
+		4627581E1856AEB10002B808 /* SummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryViewController.h; sourceTree = "<group>"; };
+		4627581F1856AEB10002B808 /* SummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryViewController.m; sourceTree = "<group>"; };
 		467D2FB01847C2B900789746 /* xml and GPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "xml and GPS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		467D2FB31847C2B900789746 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		467D2FB51847C2B900789746 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +72,18 @@
 		467D2FDA1847C2B900789746 /* xml and GPSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "xml and GPSTests-Info.plist"; sourceTree = "<group>"; };
 		467D2FDC1847C2B900789746 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		467D2FDE1847C2B900789746 /* xml_and_GPSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xml_and_GPSTests.m; sourceTree = "<group>"; };
+		467D2FE81847C49500789746 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		467D2FE91847C49500789746 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		467D2FEB1847CAFE00789746 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
+		467D2FEC1847CAFE00789746 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
+		467D2FEF18481A0C00789746 /* AddLocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AddLocation.png; sourceTree = "<group>"; };
+		467D2FF018481A0C00789746 /* CarHideGradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CarHideGradient.png; sourceTree = "<group>"; };
+		467D2FF118481A0C00789746 /* CarOptionsScroll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CarOptionsScroll.png; sourceTree = "<group>"; };
+		467D2FF218481A0C00789746 /* HideMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HideMenu.png; sourceTree = "<group>"; };
+		467D2FF318481A0C00789746 /* RemoveLocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RemoveLocation.png; sourceTree = "<group>"; };
+		467D2FF418481A0C00789746 /* SubmitTrip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SubmitTrip.png; sourceTree = "<group>"; };
+		467D2FFB184827A600789746 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		467D2FFD184A689D00789746 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				467D2FFE184A689D00789746 /* CoreLocation.framework in Frameworks */,
+				467D2FFC184827A600789746 /* MapKit.framework in Frameworks */,
 				467D2FB61847C2B900789746 /* CoreGraphics.framework in Frameworks */,
 				467D2FB81847C2B900789746 /* UIKit.framework in Frameworks */,
 				467D2FB41847C2B900789746 /* Foundation.framework in Frameworks */,
@@ -82,6 +115,10 @@
 		467D2FA71847C2B900789746 = {
 			isa = PBXGroup;
 			children = (
+				4627581E1856AEB10002B808 /* SummaryViewController.h */,
+				4627581F1856AEB10002B808 /* SummaryViewController.m */,
+				462757BB185059450002B808 /* Trip.h */,
+				462757BC185059450002B808 /* Trip.m */,
 				467D2FB91847C2B900789746 /* xml and GPS */,
 				467D2FD81847C2B900789746 /* xml and GPSTests */,
 				467D2FB21847C2B900789746 /* Frameworks */,
@@ -101,6 +138,8 @@
 		467D2FB21847C2B900789746 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				467D2FFD184A689D00789746 /* CoreLocation.framework */,
+				467D2FFB184827A600789746 /* MapKit.framework */,
 				467D2FB31847C2B900789746 /* Foundation.framework */,
 				467D2FB51847C2B900789746 /* CoreGraphics.framework */,
 				467D2FB71847C2B900789746 /* UIKit.framework */,
@@ -119,6 +158,13 @@
 				467D2FC91847C2B900789746 /* ViewController.m */,
 				467D2FCB1847C2B900789746 /* Images.xcassets */,
 				467D2FBA1847C2B900789746 /* Supporting Files */,
+				467D2FE81847C49500789746 /* Car.h */,
+				467D2FE91847C49500789746 /* Car.m */,
+				467D2FEB1847CAFE00789746 /* XMLParser.h */,
+				467D2FEC1847CAFE00789746 /* XMLParser.m */,
+				467D2FEE18481A0C00789746 /* Start Images GPS */,
+				462757B8184FC1A70002B808 /* MyAnnotation.h */,
+				462757B9184FC1A70002B808 /* MyAnnotation.m */,
 			);
 			path = "xml and GPS";
 			sourceTree = "<group>";
@@ -150,6 +196,19 @@
 				467D2FDB1847C2B900789746 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		467D2FEE18481A0C00789746 /* Start Images GPS */ = {
+			isa = PBXGroup;
+			children = (
+				467D2FEF18481A0C00789746 /* AddLocation.png */,
+				467D2FF018481A0C00789746 /* CarHideGradient.png */,
+				467D2FF118481A0C00789746 /* CarOptionsScroll.png */,
+				467D2FF218481A0C00789746 /* HideMenu.png */,
+				467D2FF318481A0C00789746 /* RemoveLocation.png */,
+				467D2FF418481A0C00789746 /* SubmitTrip.png */,
+			);
+			path = "Start Images GPS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,8 +287,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				467D2FF518481A0C00789746 /* AddLocation.png in Resources */,
 				467D2FCC1847C2B900789746 /* Images.xcassets in Resources */,
+				467D2FFA18481A0C00789746 /* SubmitTrip.png in Resources */,
+				467D2FF618481A0C00789746 /* CarHideGradient.png in Resources */,
 				467D2FBE1847C2B900789746 /* InfoPlist.strings in Resources */,
+				467D2FF918481A0C00789746 /* RemoveLocation.png in Resources */,
+				467D2FF818481A0C00789746 /* HideMenu.png in Resources */,
+				467D2FF718481A0C00789746 /* CarOptionsScroll.png in Resources */,
 				467D2FC71847C2B900789746 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,7 +316,12 @@
 			files = (
 				467D2FCA1847C2B900789746 /* ViewController.m in Sources */,
 				467D2FC41847C2B900789746 /* AppDelegate.m in Sources */,
+				462757BD185059450002B808 /* Trip.m in Sources */,
+				462757BA184FC1A70002B808 /* MyAnnotation.m in Sources */,
+				467D2FEA1847C49500789746 /* Car.m in Sources */,
 				467D2FC01847C2B900789746 /* main.m in Sources */,
+				467D2FED1847CAFE00789746 /* XMLParser.m in Sources */,
+				462758201856AEB10002B808 /* SummaryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +530,7 @@
 				467D2FE41847C2B900789746 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		467D2FE51847C2B900789746 /* Build configuration list for PBXNativeTarget "xml and GPSTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +539,7 @@
 				467D2FE71847C2B900789746 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
