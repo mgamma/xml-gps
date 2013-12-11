@@ -15,7 +15,6 @@
 @implementation SummaryViewController
 
 
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -27,17 +26,22 @@
 
 - (void)viewDidLoad
 {
+    [self.svcdelegate sendAlert];
     
     self.labelCarInfo.text = self.textCarInfo;
     self.labelDestinationInfo.text = self.textDestinationInfo;
     self.labelMileageInfo.text = self.textMileageInfo;
-    self.labelCostInfo.text = self.textCostInfo;
+    
+    
+//    self.labelCostInfo.text = self.textCostInfo;
+//     delegate method is below as an optional way of coding
+    
+    self.labelCostInfo.text = [self.svcdelegate getCostString];
     
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
-
 
 - (void)didReceiveMemoryWarning
 {
@@ -47,15 +51,16 @@
 
 - (IBAction)goBackToMainvViewButton:(id)sender {
     
-    [self.delegate didFinishViewingSummary:self];
+    [self.svcdelegate didFinishViewingSummary:self];
 }
 
 - (IBAction)activityShareButton:(UIButton *)sender {
     
     NSURL *url = [NSURL URLWithString:@"http://www.raywenderlich.com/4817/how-to-integrate-cocoas2d-and-uikit"];
-    UIImage *imageToShare = [UIImage imageNamed:@"UIKitButton.png"];
+//    UIImage *imageToShare = [UIImage imageNamed:@"UIKitButton.png"];
     
-    NSArray * activityStuff = @[@"Type your message here", imageToShare, url];
+    NSArray * activityStuff = @[@"Type your message here",  url,self.textCarInfo];
+    
     
     
     UIActivityViewController * activityControl = [[UIActivityViewController alloc] initWithActivityItems:activityStuff applicationActivities:nil];

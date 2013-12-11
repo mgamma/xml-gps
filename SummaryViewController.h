@@ -12,15 +12,16 @@
 
 @protocol SummaryViewControllerDelegate
 -(void)didFinishViewingSummary:(SummaryViewController *)controller;
+-(void)sendAlert;
+-(NSString *) getCostString;
 @end
-
-
-#warning if outlets and actions are created on either .h or.m is it automatically created in the sister file?
 
 
 @interface SummaryViewController : UIViewController
 
-@property (weak,nonatomic) id <SummaryViewControllerDelegate> delegate;
+
+
+@property (weak,nonatomic) id <SummaryViewControllerDelegate> svcdelegate;
 
 @property (strong, nonatomic) IBOutlet UILabel *labelCarInfo;
 
@@ -36,6 +37,7 @@
 @property (nonatomic,strong)NSString * textCarInfo;
 @property (nonatomic,strong)NSString * textMileageInfo;
 @property (nonatomic,strong)NSString * textDestinationInfo;
+// the property below isn't needed if you use delegate method
 @property (nonatomic,strong)NSString * textCostInfo;
 
 

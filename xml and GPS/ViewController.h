@@ -32,7 +32,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *labelNumberOfPassengers;
 
 
-
+@property (nonatomic,strong) NSString * testing;
 
 
 

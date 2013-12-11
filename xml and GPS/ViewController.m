@@ -35,7 +35,7 @@
     
     self.carChoiceIndex = 2;
     
-    
+
 }else{
     Car * temp = [[Car alloc]init];
     temp.mileage = @"25";
@@ -80,7 +80,7 @@
     
 
     
-#warning - More detail about the clean up of the code and the removal of the if statements
+
 
 //    if (floor(newLocation.coordinate.latitude)!= floor(oldLocation.coordinate.latitude)) {
     
@@ -94,10 +94,10 @@
 
 -(void)viewDidDisappear:(BOOL)animated{
     [super viewDidAppear:animated];
-    [self setCarChoiceImageLayer:nil];
+//    [self setCarChoiceImageLayer:nil];
     [self.manager stopUpdatingLocation];
-    [self setLocationMenu:nil];
-    [self setMap:nil];
+//    [self setLocationMenu:nil];
+//    [self setMap:nil];
 //    [self setLabelNumberPassengers:nil];
 //    [self setLabelTotalCost:nil];
     
@@ -245,24 +245,42 @@
         
         NSMutableArray * locations = self.ourTrip.locationStrings;
         NSString * destination = [locations lastObject];
+
         
         Car * temp = [self.cars objectAtIndex:self.carChoiceIndex];
         
-        [[segue destinationViewController] setTextCarInfo:temp.name];
-        [[segue destinationViewController]setTextDestinationInfo:destination];
-        [[segue destinationViewController]setTextMileageInfo:temp.mileage];
-        [[segue destinationViewController] setTextCostInfo:self.lableTotalCost.text];
-        [[segue destinationViewController]setDelegate:self];
+//        [[segue destinationViewController] setTextCarInfo:temp.name];
+//        [[segue destinationViewController]setTextDestinationInfo:destination];
+//        [[segue destinationViewController]setTextMileageInfo:temp.mileage];
+//        [[segue destinationViewController] setTextCostInfo:self.lableTotalCost.text];
+//        [[segue destinationViewController]setSvcdelegate:self];
         
+        // alternate method with dot notation
+        SummaryViewController * summary = segue.destinationViewController;
+        summary.svcdelegate = self;
         
+        summary.textCarInfo = temp.name;
+        summary.textDestinationInfo = destination;
+        summary.textMileageInfo = temp.mileage;
+//        summary.textCostInfo = self.lableTotalCost.text;
+        
+    
         
     }
+    
 }
+-(NSString *)getCostString{
+    return self.lableTotalCost.text;}
+
 #pragma mark - Summary view controller method
 -(void)didFinishViewingSummary:(SummaryViewController *)controller{
     [self dismissViewControllerAnimated:YES completion:^{
-        
+        NSLog(@"summary back button pushed");
     }];
+}
+
+-(void)sendAlert{
+    NSLog(@" Summary sent this");
 }
 
 
